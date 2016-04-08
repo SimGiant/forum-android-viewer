@@ -164,7 +164,7 @@ public class Menu_Activity extends AppCompatActivity {
             simpleArray();
 
         }
-        //tinydb = new TinyDB(this);
+        
 
 
         ThreadTitlesDownloaded = false;
@@ -179,7 +179,7 @@ public class Menu_Activity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
-                //String position1 = String.valueOf(position);
+               
 
                 if (WebsiteArray[position] != null) {//createnew activity whenclicked passed it the website source data
                     Intent newintent = new Intent(Menu_Activity.this, Thread_Activity.class);
@@ -267,7 +267,7 @@ public class Menu_Activity extends AppCompatActivity {
     protected void onStart() {//load on start
         super.onStart();
         Log.d("State", "trying Loaded 1");
-        // if (settings.getBoolean("saved", true)) {
+       
         if(!flag) {
             flag = true;
             File file = new File(getFilesDir(), myTitlesfile);
@@ -529,7 +529,7 @@ public class Menu_Activity extends AppCompatActivity {
         if (isOnline(context)) {
             try {
                 HttpURLConnection urlc = (HttpURLConnection)
-                        (new URL("http://clients3.google.com/generate_204")
+                        (new URL("http://www.corner.bigblueinteractive.com")
                                 .openConnection());
                 urlc.setRequestProperty("User-Agent", "Android");
                 urlc.setRequestProperty("Connection", "close");
