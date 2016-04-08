@@ -88,7 +88,7 @@ public class Thread_Activity extends AppCompatActivity {
             myInfos = savedInstanceState.getStringArray("myInfos");
             myQuotes = savedInstanceState.getStringArray("myQuotes");
             myLinks = savedInstanceState.getStringArray("myLinks");
-            //spinner.setVisibility(View.GONE);
+            
             saved = true;
             if(myTitles != null) {
                 simpleArray();
@@ -158,7 +158,7 @@ public class Thread_Activity extends AppCompatActivity {
         }
 
         SimpleAdapter adapter = new SimpleAdapter(this, fillMaps, R.layout.three_items, from, to);
-        //Linkify.addLinks(mylistView., Linkify.ALL);
+        
         mylistView.setAdapter(adapter);
     }
 
